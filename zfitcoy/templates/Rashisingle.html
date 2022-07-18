@@ -1,0 +1,150 @@
+{% include 'header.html' %}
+{% load static %}
+        <section class="as_breadcrum_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Zodiac Details</h1>
+
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li>Zodiac Details</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="as_zodiac_single_wrapper as_padderTop80 as_padderBottom60">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="as_zodiac_single_inner">
+                            <div class="as_zodiac_heading as_padderBottom50">
+                                <span class="as_sign"><img src="{{ sersingle.image.url }}" alt=""></span>
+                                {{ sersingle.name }}
+                            </div>
+
+                          {{ sersingle.detail|safe }}
+
+                            <br><br>
+                                <h1 style="color:#c20000" >Connect With Our Astrologer</h1>
+                                <a href="https://api.whatsapp.com/send?phone=+919977999075"><img  src="{% static 'assets/images/whatsapp.png' %}" style="width: 50%;margin-top: -60px;" ></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <div class="as_zodiac_sidebar">
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign1.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Aries</h5>
+                                    <a href="https://astrosolution.online/rashi/1/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign2.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Taurus </h5>
+                                    <a href="https://astrosolution.online/rashi/2/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign3.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Gemini</h5>
+                                   <a href="https://astrosolution.online/rashi/3/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign4.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Cancer</h5>
+                                    <a href="https://astrosolution.online/rashi/4/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign5.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Leo</h5>
+                                    <a href="https://astrosolution.online/rashi/5/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign6.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Virgo</h5>
+                                    <a href="https://astrosolution.online/rashi/6/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign7.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Libra</h5>
+                                    <a href="https://astrosolution.online/rashi/7/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign8.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Scorpio</h5>
+                                    <a href="https://astrosolution.online/rashi/8/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign9.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Sagittarius</h5>
+                                    <a href="https://astrosolution.online/rashi/9/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign10.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Capricorn</h5>
+                                   <a href="https://astrosolution.online/rashi/10/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign11.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Aquarius</h5>
+                                    <a href="https://astrosolution.online/rashi/11/">Read More</a>
+                                </div>
+                            </div>
+                            <div class="as_sign_box">
+                                <span class="as_sign">
+                                <img src="{% static 'assets/images/svg/sign12.svg' %}" alt="">
+                                </span>
+                                <div>
+                                    <h5>Pisces</h5>
+                                    <a href="https://astrosolution.online/rashi/12/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <br><br><br><br>
+ {% include 'footer.html' %}

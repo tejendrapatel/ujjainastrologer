@@ -1,0 +1,118 @@
+{% include 'header.html' %}
+{% load static %}
+        <section class="as_breadcrum_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 style="font-size:25px" >Shop</h1>
+
+                        <ul class="breadcrumb"> 
+                            <li><a href="#">Home</a></li>
+                            <li  >Shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="as_product_single_wrapper as_padderBottom80 as_padderTop80">
+            <div class="container">
+                <div class="row">
+                
+                    {% for i in pro %}
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="as_product_box">
+                            <div class="as_product_img">
+                                <img src="{{ i.image.url }}" alt="" style="width: 300px;height: 200px;" class="img-responsive">
+
+                                <ul>
+                                           
+                                    <li> <a href="https://api.whatsapp.com/send?phone=+919977999075" target="_blank" ><img style="width: 20px" src="{% static 'assets/images/wa.png' %}" alt=""><span>Buy Now</span></a></li>
+                                    
+                                </ul>
+                            </div> 
+                            <h4 class="as_subheading">{{ i.name }}</h4>
+                            <p>{{ i.detail }}</p>
+                            <span class="as_price">Rs {{ i.Discount_price }} <del>Rs {{ i.Orginal_price }}</del> <span class="as_orange">( {{ i.Discountpercent }}% off)</span></span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                   
+                   
+                </div>
+            </div>
+        </section>
+
+        <section class="as_whychoose_wrapper as_padderTop80 as_padderBottom50">
+            <div class="container">
+                <div class="row as_verticle_center">
+                    <div class="col-lg-3 col-md-12">
+                        <h1 class="as_heading">Why Choose Us</h1>
+                       
+                    </div>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="82"
+                                        data-speed="5000">20</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
+                                    <h4>Success Horoscope</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="96"
+                                        data-speed="5000">96</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
+                                    <h4>Guaranteed Success</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                <div class="as_whychoose_box text-center">
+                                    <span class="as_number"><span><span data-from="0" data-to="50"
+                                        data-speed="5000">50</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
+                                    <h4>Trust by thousands of clients</h4>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="as_product_wrapper as_padderBottom80 as_padderTop80 as_product_page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1 class="as_heading as_heading_center">Our Latest Products</h1>
+                        
+                        
+                        <div class="row as_product_slider">
+                            {% for i in new %}
+                            <div class="col-lg-3 col-md-6">
+                                <div class="as_product_box">
+                                    <div class="as_product_img">
+                                        <img src="{{ i.image.url }}" style="width: 300px;height: 200px;" alt="" class="img-responsive">
+
+                                        <ul>
+                                           
+                                            <li><a href="https://api.whatsapp.com/send?phone=+919977999075"  target="_blank"  ><img style="width: 20px" src="{% static 'assets/images/wa.png' %}" alt=""><span>Buy Now</span></a></li>
+                                            
+                                        </ul>
+                                    </div> 
+                                    <h4 class="as_subheading">{{ i.name }}</h4>
+                            <span class="as_price">Rs {{ i.Discount_price }} <del>Rs {{ i.Orginal_price }}</del> <span class="as_orange">( {{ i.Discountpercent }}% off)</span></span>
+                        </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+<br><br>
+
+        
+{% include 'footer.html' %}
