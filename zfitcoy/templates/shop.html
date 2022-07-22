@@ -4,11 +4,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h1 style="font-size:25px" >Shop</h1>
+                        <h1 style="font-size:25px;color:#c20000">Shop</h1>
 
                         <ul class="breadcrumb"> 
-                            <li><a href="#">Home</a></li>
-                            <li  >Shop</li>
+                            <li><a href="#" style="color:#c20000" >Home</a></li>
+                            <li style="color:#c20000" >Shop</li>
                         </ul>
                     </div>
                 </div>
@@ -20,8 +20,8 @@
                 <div class="row">
                 
                     {% for i in pro %}
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="as_product_box">
+                    <div class="col-lg-3 col-md-6 col-sm-6"  >
+                        <div class="as_product_box"  >
                             <div class="as_product_img">
                                 <img src="{{ i.image.url }}" alt="" style="width: 300px;height: 200px;" class="img-responsive">
 
@@ -31,9 +31,9 @@
                                     
                                 </ul>
                             </div> 
-                            <h4 class="as_subheading">{{ i.name }}</h4>
-                            <p>{{ i.detail }}</p>
-                            <span class="as_price">Rs {{ i.Discount_price }} <del>Rs {{ i.Orginal_price }}</del> <span class="as_orange">( {{ i.Discountpercent }}% off)</span></span>
+                            <h4 class="as_subheading" style="color: #000" >{{ i.name }}</h4>
+                            <p style="color: #000" >{{ i.detail }}</p>
+                            <span class="as_price" style="color: #000" >Rs {{ i.Discount_price }} <del>Rs {{ i.Orginal_price }}</del> <span class="as_orange">( {{ i.Discountpercent }}% off)</span></span>
                         </div>
                     </div>
                     {% endfor %}
@@ -47,7 +47,7 @@
             <div class="container">
                 <div class="row as_verticle_center">
                     <div class="col-lg-3 col-md-12">
-                        <h1 class="as_heading">Why Choose Us</h1>
+                        <h1 class="as_heading" style="color: #c20000" >Why Choose Us</h1>
                        
                     </div>
                     <div class="col-lg-9 col-md-12">
@@ -56,21 +56,21 @@
                                 <div class="as_whychoose_box text-center">
                                     <span class="as_number"><span><span data-from="0" data-to="82"
                                         data-speed="5000">20</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
-                                    <h4>Success Horoscope</h4>
+                                    <h4 style="color:#000 ;" >Success Horoscope</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="as_whychoose_box text-center">
                                     <span class="as_number"><span><span data-from="0" data-to="96"
                                         data-speed="5000">96</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
-                                    <h4>Guaranteed Success</h4>
+                                    <h4 style="color:#000 ;" >Guaranteed Success</h4>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                                 <div class="as_whychoose_box text-center">
                                     <span class="as_number"><span><span data-from="0" data-to="50"
                                         data-speed="5000">50</span>+</span><img src="{% static 'assets/images/svg/shape.svg' %}" alt=""></span>
-                                    <h4>Trust by thousands of clients</h4>
+                                    <h4 style="color:#000 ;" >Trust by thousands of clients</h4>
                                 </div>
                             </div>
 

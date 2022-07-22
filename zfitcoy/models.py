@@ -52,6 +52,7 @@ class Services(models.Model):
     discription = RichTextField(null=True)
     image = models.FileField(null=True)
     date = models.DateField(auto_now=True)
+    video = models.URLField(null=True)
     def __str__(self):
         return self.name
 
